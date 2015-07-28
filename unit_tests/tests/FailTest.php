@@ -1,5 +1,5 @@
 <?php
-class Test extends PHPUnit_Framework_TestCase
+class FailTest extends PHPUnit_Framework_TestCase
 {
     public function testTrue() {
         $this->assertEquals(1,1);
