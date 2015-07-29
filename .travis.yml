@@ -6,3 +6,5 @@ php:
   - hhvm
   - nightly
 script: phpunit --configuration="unit_tests/phpunit.xml" 
+before_script:
+  - mysql -uroot test < unit_tests/mysql_dump.sql
