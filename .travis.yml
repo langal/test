@@ -7,4 +7,4 @@ php:
   - nightly
 script: phpunit --configuration="unit_tests/phpunit.xml" 
 before_script:
-  - mysql -uroot test < unit_tests/mysql_dump.sql
+  - mysql -uroot < unit_tests/mysql_dump.sql
