@@ -1,6 +1,11 @@
 machine:
   php:
-    version: 5.5.11
+    version: 5.4.5
+  services:
+    - mysql
+dependencies:
+  pre:
+    - mysql -uroot < unit_tests/mysql_dump.sql
 test:
   override:
     - phpunit --configuration="unit_tests/phpunit.xml"
